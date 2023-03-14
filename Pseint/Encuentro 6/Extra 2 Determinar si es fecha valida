@@ -1,0 +1,19 @@
+Algoritmo sin_titulo
+	definir num Como entero
+	
+	escribir "por favor, ingrese un número entero"
+	leer num
+	
+	si num = 0
+		escribir "No es par ni impar"
+		sino
+		si num mod 2 = 0
+		escribir "PAR"
+		SiNo
+			si num mod 2 = 1
+			Escribir "IMPAR"
+			FinSi
+		FinSi
+	FinSi
+	
+FinAlgoritmo

@@ -1,0 +1,16 @@
+Algoritmo ejercicio4_dia4
+	
+	Definir num , factorial Como Entero
+	
+	Escribir "Decime un numero para saber su factorial"
+	Leer num
+	factorial = 1
+	si num > 1 Entonces
+		para num <- 2 hasta num Hacer
+			factorial = factorial * num
+		FinPara
+		
+	FinSi
+	Escribir "!",  factorial
+	
+FinAlgoritmo

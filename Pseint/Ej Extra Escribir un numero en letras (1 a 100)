@@ -1,0 +1,143 @@
+Algoritmo sin_titulo
+	
+	//1-9
+	//10-90	//30 COMBINACIONES
+	
+	//99 COMBINACIONES
+	
+	//concatenar y mostrar resultado
+	
+//	5)Ingresar un número entero de dos cifras y mostrar su valor en letras.
+
+	Definir num Como Entero
+	
+	Escribir "Ingrese un numero de 2 cifras"
+	leer num
+	
+	conversion(num)
+	
+FinAlgoritmo
+
+SubProceso 	conversion(num)
+	Definir numfrase Como Caracter
+	Definir decena,unidad Como Entero
+	
+	decena = trunc(num/10)
+	unidad = num mod 10
+	numfrase = ""
+	
+	Segun decena
+		1:  si unidad mod 10 > 5
+				numfrase = "Dieci"
+			SiNo
+				si unidad mod 10 = 0
+					numfrase = "Diez"
+				SiNo
+					si unidad mod 10 = 1
+						numfrase = "Once"
+					SiNo
+						si unidad mod 10 = 2
+							numfrase = "Doce"
+						SiNo
+							si unidad mod 10 = 3
+								numfrase = "Trece"
+							SiNo
+								si unidad mod 10 = 4
+									numfrase = "Catorce"
+								SiNo
+									numfrase = "Quince"
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		2:	si unidad = 0
+				numfrase = "Veinte"
+			sino 
+				numfrase = "Veinti"
+			FinSi
+		3:	numfrase = "Treinta"
+		4:	numfrase = "Cuarenta"
+		5:	numfrase = "Cincuenta"
+		6:	numfrase = "Sesenta"
+		7:	numfrase = "Setenta"
+		8:	numfrase = "Ochenta"
+		9:	numfrase = "Noventa"
+	FinSegun
+	
+	Segun unidad
+		0: si unidad = 0 y decena = 0
+				numfrase = "Cero"
+			FinSi
+		1: si decena > 2
+				numfrase = Concatenar(numfrase," y uno")
+			SiNo
+				si decena = 2
+					numfrase = Concatenar(numfrase,"uno")
+				FinSi
+			FinSi
+		2: si decena > 2
+				numfrase = Concatenar(numfrase," y dos")
+			SiNo
+				si decena = 2
+					numfrase = Concatenar(numfrase,"dos")
+				FinSi
+			FinSi
+		3: si decena > 2
+				numfrase = Concatenar(numfrase," y tres")
+			SiNo
+				si decena = 2
+					numfrase = Concatenar(numfrase,"tres")
+				FinSi
+			FinSi
+		4: si decena > 2
+				numfrase = Concatenar(numfrase," y cuatro")
+			SiNo
+				si decena = 2
+					numfrase = Concatenar(numfrase,"cuatro")
+				FinSi
+			FinSi
+		5: si decena > 2
+				numfrase = Concatenar(numfrase," y cinco")
+			SiNo
+				si decena = 2
+					numfrase = Concatenar(numfrase,"cinco")
+				FinSi
+			FinSi
+		6: si decena < 3
+				numfrase = Concatenar(numfrase,"seis")
+			sino 
+				si decena > 2
+					numfrase = Concatenar(numfrase," y seis")
+				finsi
+			FinSi
+		7: si decena < 3
+				numfrase = Concatenar(numfrase,"siete")
+			sino 
+				si decena > 2
+					numfrase = Concatenar(numfrase," y siete")
+				finsi
+			FinSi
+		8: si decena < 3
+				numfrase = Concatenar(numfrase,"ocho")
+			sino 
+				si decena > 2
+					numfrase = Concatenar(numfrase," y ocho")
+				finsi
+			FinSi
+		9: si decena < 3
+				numfrase = Concatenar(numfrase,"nueve")
+			sino 
+				si decena > 2
+					numfrase = Concatenar(numfrase," y nueve")
+				finsi
+			FinSi
+		
+	FinSegun
+	
+	Escribir num
+	Escribir numfrase
+	
+FinSubProceso
+	

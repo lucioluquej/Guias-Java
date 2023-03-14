@@ -1,0 +1,39 @@
+Algoritmo sin_titulo
+	Definir dia,jornada,nombre,feriado Como Caracter
+	Definir horas,total,pago Como real
+	pago=0
+	Escribir "ingrese nombre "
+	leer nombre
+	Escribir "ingrese dia de trabajo"
+	leer dia
+	Escribir "es feriado (s o n):"
+	leer feriado
+	Escribir "ingrese jornada (diurna o nocturna)"
+	leer jornada
+	Escribir "ingrese las horas trabajadas"
+	leer horas
+	total=calculo(horas,jornada,feriado,pago)
+	Escribir "el total que se le paga es ",total
+FinAlgoritmo
+
+Funcion return=calculo(horas,jornada,feriado,pago)
+	Definir return Como Entero
+	Segun feriado Hacer
+		"s": 
+			si jornada="diurna" Entonces
+				pago=100*horas
+				return=pago
+			SiNo
+				pago=137.5*horas
+				return=pago
+			FinSi
+		"n":
+			si jornada="diurna" Entonces
+				pago=90*horas
+				return=pago
+			SiNo
+				pago=125*horas
+				return=pago
+			FinSi
+	FinSegun
+FinFuncion

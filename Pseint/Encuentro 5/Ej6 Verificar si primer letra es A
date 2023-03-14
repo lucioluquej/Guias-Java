@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+	
+	definir frase como cadena
+	
+	escribir "ingrese una frase"
+	leer frase
+	
+	frase = Mayusculas(frase)
+	si (subcadena(frase,0,0) == "A")
+		Escribir "CORRECTO"
+	SiNo
+		ESCRIBIR "INCORRECTO"
+	FinSi
+	
+FinAlgoritmo

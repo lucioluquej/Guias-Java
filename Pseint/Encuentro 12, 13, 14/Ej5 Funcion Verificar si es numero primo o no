@@ -1,0 +1,29 @@
+Algoritmo sin_titulo
+//	Realizar una función que reciba un numero ingresado por el usuario y averigüe si el número es
+//	primo o no. Un número es primo cuando es divisible sólo por 1 y por sí mismo, por ejemplo: 2,
+	//	3, 5, 7, 11, 13, 17, etc. Nota: recordar el uso del MOD.
+	
+	definir num Como Entero
+	definir resultado como logico
+	Escribir "ingrese un número entero"
+	leer num
+	resultado= primito(num)
+	si resultado=Verdadero
+		escribir "Es un número primo"
+	SiNo
+		escribir "No es un numero primo"
+	FinSi	
+FinAlgoritmo
+
+Funcion primo <- primito(num)
+	definir primo Como Logico
+	definir num2, i, contador Como Entero
+	contador=0
+	para i <- 1 hasta num con paso 1 para
+		num2=num mod i
+		si num2=0
+			contador=contador+1
+		FinSi
+	FinPara
+	primo = (contador==2) o (num==1)
+FinFuncion

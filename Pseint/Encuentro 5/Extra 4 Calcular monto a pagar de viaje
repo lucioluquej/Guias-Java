@@ -1,0 +1,37 @@
+Algoritmo sin_titulo
+	Definir nota1 Como Entero
+	Definir nota2 Como Entero
+	Definir nota3 Como Entero
+	Definir nota4 Como Entero
+	Definir nota5 Como Entero
+	Definir nota6 Como Entero
+	Definir nota7 Como Entero
+	Definir nota8 Como Real
+	Definir nota9 Como Real
+	
+	escribir "por favor ingrese la hora de retiro"
+	leer nota1
+	escribir "por favor ingrese los minutos de retiro"
+	leer nota2
+	
+	escribir "por favor ingrese la hora de devolucion"
+	leer nota3
+	escribir "por favor ingrese los minutos de devolucion"
+	leer nota4
+	escribir "por favor ingrese los litros de nafta consumidos"
+	leer nota8
+	
+	Escribir " hora de retiro" nota1 ":" nota2
+	Escribir " hora de devolucion" nota3 ":" nota4
+	nota5 = (nota1 * 60) + nota2
+	nota6 = (nota3 * 60) + nota4
+	nota7 = nota6 - nota5
+	nota9 = (nota7 * 5.2) + (nota8 * 40)
+	
+	si nota7 <= 120 Entonces
+		
+		Escribir " su gasto es de  $400"
+	SiNo
+		Escribir " su gasto es de  $" nota9
+	FinSi
+FinAlgoritmo

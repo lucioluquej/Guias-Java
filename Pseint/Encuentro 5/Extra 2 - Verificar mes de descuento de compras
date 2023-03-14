@@ -1,0 +1,18 @@
+Algoritmo sin_titulo
+	
+	definir mes Como cadena
+	definir monto Como Real
+	
+	escribir "ingrese el mes en que realizó la compra"
+	leer mes
+	mes = Mayusculas(mes)
+	
+	escribir "ingrese el monto de su compra"
+	leer monto
+	
+	si (mes = "SEPTIEMBRE") O (mes = "OCTUBRE") O (mes = "NOVIEMBRE")
+		escribir monto-(monto*10)/100
+		sino escribir monto
+	FinSi
+	
+FinAlgoritmo

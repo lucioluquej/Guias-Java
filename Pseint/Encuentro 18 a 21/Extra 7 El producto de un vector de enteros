@@ -1,0 +1,26 @@
+algoritmo calculin
+	definir vector,i,resultado Como Entero
+	dimension vector(4)
+	para i=0 hasta 3 hacer
+		vector(i)=aleatorio(0,20)
+	FinPara
+	resultado<-funcioncita(vector)
+	escribir "El resultado de la multiplic.de los nros.que componen el arreglo es: ",resultado
+	escribir""
+	para i=0 hasta 3 Hacer
+		escribir sin saltar vector(i)," "
+	FinPara
+	escribir""
+	
+FinAlgoritmo
+
+funcion resultado<-funcioncita(vector)
+	definir resultado,i Como Entero
+	para i=0 hasta 3 hacer
+		si i=0 Entonces
+			resultado=vector(0)
+		SiNo
+			resultado=resultado*vector(i)
+		FinSi
+	FinPara
+FinFuncion

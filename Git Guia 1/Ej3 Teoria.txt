@@ -1,0 +1,9 @@
+        public static void main(String[] args) {
+   int suma = 5 + 15;
+   double resta = 27 - 20;
+   double divi = 10 / 5;
+   System.out.println("La suma es " + suma);
+   System.out.println("La resta es " + resta);
+   System.out.println("La division es " + divi);
+ }	
+}

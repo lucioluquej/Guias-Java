@@ -1,0 +1,33 @@
+algoritmo calculin
+	definir vector,i,resultado Como Entero
+	dimension vector(10)
+	para i=0 hasta 9 hacer
+		vector(i)=aleatorio(0,20)
+	FinPara
+	resultado<-funcioncita(vector)
+	escribir "La diferencia entre el nro.menor y el nro.mayor es:",resultado
+	
+	para i=0 hasta 9 Hacer
+		escribir vector(i)," "
+	FinPara
+	
+FinAlgoritmo
+
+funcion diferencia<-funcioncita(vector)
+	definir diferencia,max,min,i Como Entero
+	para i=0 hasta 9 Hacer
+		si i=0 Entonces
+			min=vector(i)
+			max=vector(i)
+		SiNo
+			si vector(i)>max Entonces
+				max=vector(i)
+			FinSi
+			si vector(i)<min Entonces
+				min=vector(i)
+			FinSi
+		finsi
+	FinPara
+	diferencia=max-min
+FinFuncion
+

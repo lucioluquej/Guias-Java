@@ -1,0 +1,24 @@
+Algoritmo sin_titulo
+	
+	definir tornillo_defectuoso, tornillo Como entera
+	
+	escribir "indique la cantidad de tornillos no defectuosos producidos por el operario:"
+	leer tornillo
+	escribir "indique la cantidad de tornillos defectuosos producidos por el operario:"
+	leer tornillo_defectuoso
+	
+	si (tornillo_defectuoso  < 200) y (tornillo >  10000)
+		escribir "el operario es grado 8"
+	SiNo
+		si (tornillo >  10000)
+			escribir "el operario es grado 7"
+		SiNo
+			si (tornillo_defectuoso  < 200)
+				escribir "el operario es grado 6"
+			SiNo
+				escribir "el operario es grado 5"
+			FinSi
+		FinSi
+	FinSi
+	
+FinAlgoritmo

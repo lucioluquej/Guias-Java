@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	definir nota_practica, nota_teorica, nota_problema como real
+	definir nomre_alumno como cadena
+	
+	escribir "ingrese el nombre del alumno"
+	leer nomre_alumno
+	
+	mientras longitud(nomre_alumno) <> 0 Hacer
+		escribir "ingrese la nota de la parte práctica"
+		leer nota_practica
+		escribir "ingrese la nota de la parte de problemas"
+		leer nota_problema
+		escribir "ingrese la nota de la parte teórica"
+		leer nota_teorica
+		si (nota_practica<0) o (nota_practica>10) o (nota_problema<0) o (nota_problema>10) o (nota_teorica<0) o (nota_teorica>10)
+			Escribir "error"
+		SiNo
+			nota_practica = nota_practica*0.1
+			nota_problema = nota_problema*0.5
+			nota_teorica = nota_teorica*0.4
+			escribir "la nota de " nomre_alumno " es " (nota_practica+nota_problema+nota_teorica)
+		FinSi	
+		escribir "ingrese el nombre del alumno"
+		leer nomre_alumno
+	FinMientras	
+FinAlgoritmo

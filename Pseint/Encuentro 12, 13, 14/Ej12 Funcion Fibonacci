@@ -1,0 +1,36 @@
+Algoritmo secuenciafibonacci
+	Definir num , num1  Como entero
+	Escribir "ingrese cantidad de secuencias"
+	leer num 
+	
+	
+	num1 =  secuencia ( num )
+	Escribir "el ultimo numero de fibonacci es " num1
+	
+FinAlgoritmo
+
+
+
+Funcion a <- secuencia ( num  )
+	Definir a , b ,c  como entero
+	
+	a= 0
+	b= 1
+	
+	Para  num <- 1 Hasta num Hacer
+		Escribir a
+		c = a + b
+		a= b
+		b = c
+		
+		
+		
+	FinPara
+	
+	a = b - a
+	
+	
+	
+	
+FinFuncion
+	

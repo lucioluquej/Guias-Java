@@ -1,0 +1,27 @@
+Algoritmo sin_titulo
+	definir num como entero
+	escribir "ingrese un número"
+	leer num
+	si impar(num)=Verdadero
+		escribir "El número posee todas sus cifras impares."
+	SiNo
+		Escribir "El número no posee todas sus cifras impares"
+	FinSi
+FinAlgoritmo
+
+funcion calculo <- impar(num)
+	definir cifra, calculo1, calculo2 como entero
+	definir calculo como logico
+	calculo1=0
+	calculo2=0
+	mientras num > 0 Hacer
+		cifra= num mod 2
+		si cifra<>0
+			calculo1=calculo1+1
+		FinSi
+		calculo2=calculo2+1
+		num= trunc(num/10)
+	FinMientras
+	calculo = calculo1==calculo2
+FinFuncion
+	

@@ -1,0 +1,24 @@
+Algoritmo sin_titulo
+	Definir nota1 como cadena
+	Definir nota2 Como Cadena
+	Definir nota3 Como Cadena
+	Definir  valor1 Como entero
+	Definir  valor3 Como Logico
+	Escribir " por favor ingrese una frase o palabra "
+	Escribir " frase o palabra"
+	leer nota1
+	valor1 = longitud(nota1)
+	
+	Escribir valor1
+	nota2 = subcadena(nota1,0,0)
+	Escribir nota2
+	nota3 = subcadena(nota1,valor1- 1,valor1)
+	escribir nota3
+	valor3 = (nota2 = nota3)	
+ si valor3 Entonces
+		Escribir "correcto"
+	SiNo
+	Escribir "incorrecto"
+	FinSi
+	
+FinAlgoritmo
