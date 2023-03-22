@@ -22,7 +22,7 @@ public class Practica2 {
         int edad;
         boolean comp;
         System.out.print("Ingresar nombre de persona: ");
-        nombre= leer.nextLine();
+        nombre= leer.next();
         System.out.print("Edad: ");
         edad= leer.nextInt();
         comp= evaluar(edad);
@@ -32,10 +32,10 @@ public class Practica2 {
             System.out.println("Es mayor de edad");
         }
         System.out.print("Desea ingresar otra persona: ");
-        resp=leer.nextLine();
+        resp=leer.next();
         while (resp.equalsIgnoreCase("no")){
             System.out.print("Ingresar nombre: ");
-            nombre= leer.nextLine();
+            nombre= leer.next();
             System.out.print("Edad: ");
             edad= leer.nextInt();
             comp= evaluar(edad);
@@ -45,7 +45,7 @@ public class Practica2 {
                System.out.println("Es mayor de edad");
             }
             System.out.print("Desea ingresar otra persona: ");
-            resp=leer.nextLine();
+            resp=leer.next();
         }
     }
     
